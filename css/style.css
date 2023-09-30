@@ -7,11 +7,12 @@
 :root {
     --dark-title-color: #48555B;
     --dark-text-color: #48555B;
+    --blue-text-color: #00A4E5;
+    --outline-card-color: #E6E6E6;
     --light-text-color: #fff;
     --light-btn-color: #fff;
     --background-btn-color: #00A4E5;
-    --blue-text-color: #00A4E5;
-    --btn-color: #FFF;
+    --btn-color: #FFF;  
 }
 
 * {
@@ -163,11 +164,11 @@ header {
 }
 
 .about__content-text {
+    margin-top: 95px;
     width: 405.08px;
     font-size: 20px;
     line-height: 23.44px;
     letter-spacing: 0.19px;
-    margin-top: 85px;
     color: var(--dark-title-color);
 }
 
@@ -204,3 +205,63 @@ header {
 .about__item:not(:last-child) {
     margin-right: 20px;
 }
+
+/* Services */
+
+.services {
+    padding-top: 118px;
+}
+
+.services__header {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+}
+
+.services__heading {
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 2.31px;
+    color: var(--dark-title-color);
+    margin-right: 154px;
+}
+
+.services__description {
+    max-width: 405px;
+    margin-right: 30px;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555B;
+
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 80px;
+}
+
+.services__card {
+    padding: 38px 22px 39px 23px;
+    outline: 1px solid var(--outline-card-color);
+}
+
+.services__card-heading {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.43px;
+    color: var(--dark-title-color);
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+.services__card-description {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    color: var(--dark-text-color);
+}
+
